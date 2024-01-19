@@ -1,0 +1,15 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  div {
+    margin: 20px;
+  }
+  
+  #source,
+  #target {
+    flex: 1;
+    border: thin solid #bbb;
+  }
+  
