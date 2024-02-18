@@ -7,4 +7,5 @@ function normalize(x) {
 }
 console.log(normalize(-2));     // output: 2
 console.log(normalize(4));      // output: 4
-console.log(divide(-2, 4));     // ReferenceError: normalized is not defined --> if normalize instead of normalized then output: 0.5
+console.log(divide(-2, 4));     /*  ReferenceError: normalized is not defined 
+                                --> if normalize instead of normalized then output: 0.5 */
