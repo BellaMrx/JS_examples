@@ -1,0 +1,9 @@
+'use strict';
+const queue = [];           // Declaration of a normal array
+queue.push(1);              // Add an element ...
+queue.push(2);              // ... and another one ...
+queue.push(3);              // ... and one more ...
+queue.push(4, 5, 6, 7, 8);  // ... and several more in one go
+console.log(queue.shift()); // The first element added, the 1st element, is returned.
+
+// output:  1

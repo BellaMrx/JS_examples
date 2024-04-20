@@ -1,0 +1,9 @@
+'use strict';
+const stack = [];           // Declaration of a normal array
+stack.push(1);              // Add an element ...
+stack.push(2);              // ... and another one ...
+stack.push(3);              // ... and one more ...
+stack.push(4, 5, 6, 7, 8);  // ... and several more in one go
+console.log(stack.pop());   // The last element added, the 8th element, is returned
+    
+// output:  8
