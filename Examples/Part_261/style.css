@@ -1,0 +1,12 @@
+.border {
+    border: 2px solid red;
+    border-radius: 25px;
+    padding: 25px 25px 25px 25px;
+}
+.even {
+    background-color: #FADBD8;
+}
+td {
+    font-family: 'Verdana';
+    font-size: 12px;
+}
