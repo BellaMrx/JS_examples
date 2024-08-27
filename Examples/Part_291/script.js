@@ -1,0 +1,26 @@
+function handler(ev) {
+    const e = ev || window.event;                           // Get event
+    const target = e.target || e.srcElement;                // Target element
+    this.classList.toggle('selected');                      // CSS class
+    console.log(                                            // Output clicked ...
+      `Clicked on node with ID "${target.id}"`              // ... element.
+    );
+    console.log(                                            // Output current ...
+      `Event at node with ID "${this.id}"`                  // ... element.
+    );
+  }
+  function init() {
+    const elements = document.querySelectorAll(             // All elements ...
+      '.level1, ' +                                         // ... of the first, ...
+      '.level2, ' +                                         // ... of the second ...
+      '.level3'                                             // ... and the third ...
+    );                                                      // ... level ...
+    for(let i=0; i<elements.length; i++) {                  // ... receive an
+      elements[i].addEventListener(                         // ... listener for the ...
+        'click',                                            // ... click event.
+        handler
+      );
+    }
+  }
+  document.addEventListener('DOMContentLoaded', init);
+  
